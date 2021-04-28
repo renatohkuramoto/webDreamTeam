@@ -8,48 +8,57 @@ export const Container1 = styled.div`
     display: flex;
     justify-content: center;
     background-color: ${props => props.theme.colors.primary};
-    height: 70vh;
+    height: 100vh;
 
     @media(max-width: 770px) {
-        height: 40vh;
+        height: 105vh;
+    }
+
+    @media(max-width: 640px) {
+        height: 110vh;
     }
 `;
 
 export const Container2 = styled.div`
     display: flex;
     justify-content: center;
-    background-color: white;
 `;
 
 export const Info = styled.div`
+    margin-top: 150px;
     display: inline-block;
     h3 {
         text-align: center;
-        margin-top: 5%;
-        margin-bottom: 2%;
-        font-size: 3vw;
+        margin-bottom: 75px;
+        font-size: 3.5rem;
+        word-wrap: break-word;
         color: white;
      }
 
      span {
          color: white;
-         font-size: 3vw;
+         font-size: 2.5rem;
          font-family: 'Zilla Slab Highlight';
      }
 
      @media (max-width: 770px) {
-         > h3 {
-            margin-top: 10%;
-            margin-bottom: 5%;
-            font-size: 5vw;
+        margin-top: 75px;
+        > h3 {
+            margin-bottom: 50px;
+            font-size: 2rem;
             word-wrap: break-word;
-         }
+        }
      }
 `;
 
 export const ContainerBox = styled.div`
     display: flex;
     justify-content: center;
+
+    @media (max-width: 800px) {
+        display: block;
+        justify-content: center;
+    }
 `;
 
 export const Box1 = styled.div`
@@ -58,9 +67,8 @@ export const Box1 = styled.div`
         width: 25vw;
         height: 30vh;
         border-radius: 5%;
-        margin: 2vw;
+        margin: 30px;
         background-image: url(${conheca});
-        background-attachment: scroll;
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
@@ -85,21 +93,21 @@ export const Box1 = styled.div`
         height: 35vh;
     }
 
-    @media (max-width: 770px) {
+    @media (max-width: 800px) {
         > div {
-            width: 27vw;
-            height: 15vh;
-            margin: 1vw;
+            width: 70vw;
+            height: 20vh;
+            margin: 10% auto;
         }
 
         > div, span{
-            font-size: 4vw;
+            font-size: 2rem;
             word-wrap: break-word;
         }
 
         div:hover {
-            width: 32vw;
-            height: 20vh;
+            width: 80vw;
+            height: 25vh;
         }
     }
 `;
@@ -110,7 +118,7 @@ export const Box2 = styled.div`
         width: 25vw;
         height: 30vh;
         border-radius: 5%;
-        margin: 2vw;
+        margin: 30px;
         background-image: url(${fazemos});
         background-attachment: scroll;
         background-size: cover;
@@ -139,19 +147,19 @@ export const Box2 = styled.div`
 
     @media (max-width: 770px) {
         > div {
-            width: 27vw;
-            height: 15vh;
-            margin: 1vw;
+            width: 70vw;
+            height: 20vh;
+            margin: 10% auto;
         }
 
         > div, span{
-            font-size: 4vw;
+            font-size: 2rem;
             word-wrap: break-word;
         }
 
         div:hover {
-            width: 32vw;
-            height: 20vh;
+            width: 80vw;
+            height: 25vh;
         }
     }
 `;
@@ -162,7 +170,7 @@ export const Box3 = styled.div`
         width: 25vw;
         height: 30vh;
         border-radius: 5%;
-        margin: 2vw;
+        margin: 30px;
         background-image: url(${projetos});
         background-attachment: scroll;
         background-size: cover;
@@ -191,19 +199,19 @@ export const Box3 = styled.div`
 
     @media (max-width: 770px) {
         > div {
-            width: 27vw;
-            height: 15vh;
-            margin: 1vw;
+            width: 70vw;
+            height: 20vh;
+            margin: 10% auto;
         }
 
         > div, span{
-            font-size: 4vw;
+            font-size: 2rem;
             word-wrap: break-word;
         }
 
         div:hover {
-            width: 32vw;
-            height: 20vh;
+            width: 80vw;
+            height: 25vh;
         }
     }
 `;
@@ -211,28 +219,32 @@ export const Box3 = styled.div`
 export const Sobre = styled.div`
     display: inline-block;
     margin-bottom: 10%;
+    width: 100%;
     h3 {
+        margin-top: 10vh;
         color: ${props => props.theme.colors.secondary};
         text-align: center;
-        font-size: 3vw;
+        font-size: 3rem;
         padding: 5%;
     }
 
     p {
+        margin-top: 5vh;
         padding-left: 10%;
         padding-right: 10%;
-        font-size: 1.7vw;
+        font-size: 2rem;
         text-align: center;
+        font-weight: bold;
     }
 
     @media(max-width: 770px) {
         > h3 {
-            font-size: 5vw;
+            font-size: 2rem;
             word-break: break-word;
         }
 
         > p {
-            font-size: 4vw;
+            font-size: 1.3rem;
         }
     }
 `;

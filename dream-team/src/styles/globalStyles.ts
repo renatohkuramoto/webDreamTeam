@@ -24,4 +24,8 @@ export default createGlobalStyle`
     h3 {
         font-family: 'Zilla Slab Highlight';
     }
+
+    p {
+        font-family: 'Quicksand', sans-serif;
+    }
 `;

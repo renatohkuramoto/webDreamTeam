@@ -13,7 +13,7 @@ export const Container = styled.div`
     height: 100vh;
 
     @media (max-width: 770px) {
-        height: 60vh;
+        height: 100vh;
     }
 `;
 
@@ -23,14 +23,14 @@ export const HomeText = styled.div`
     h3 {
         margin-top: 35%;
         color: white;
-        font-size: 3.5vw;
+        font-size: 3rem;
     }
 
     @media(max-width: 770px) {
         > h3 {
-            padding: 10px;
+            margin-top: 40vh;
             text-align: center;
-            font-size: 5vw;
+            font-size: 2rem;
             word-wrap: break-word;
         }
     }
@@ -39,15 +39,14 @@ export const HomeText = styled.div`
 export const WhatsAppImage = styled.div`
     img {
         position: fixed;
-        min-width: 5%;
-        width: 5%;
+        width: 7vw;
         bottom: 1vw;
         right: 1vw;
     }
 
     @media(max-width: 770px) {
         > img {
-            min-width: 10%;
+            width: 15vw;
         }
     }
 `;

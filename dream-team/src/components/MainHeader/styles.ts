@@ -9,13 +9,14 @@ export const Container = styled.div`
     border-bottom: 1px solid ${props => props.theme.colors.gray};
     background-color: ${props => props.theme.colors.primary};
     width: 100vw;
-    height: auto;
+    height: 10vh;
 
     img {
         width: 25vw;
     }
 
     @media(max-width: 770px) {
+        height: 8vh;
         > img {
             width: 50vw;
         }
@@ -32,7 +33,7 @@ export const Socials = styled.div`
 
     @media (max-width: 770px) {
         > img {
-            min-width: 7vw;
+            min-width: 9vw;
             padding: 2px;
             margin: 0 0;
         }
